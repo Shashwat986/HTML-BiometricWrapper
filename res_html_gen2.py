@@ -5,12 +5,12 @@ import string
 
 try:
 	basepath = sys.argv[1]
-except:
+except IndexError:
 	basepath = "./s1"
 
 try:
 	outfile = sys.argv[2]
-except:
+except IndexError:
 	outfile = "test.html"
 
 out = open(outfile,'w')
